@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block app_content %}
+
+    <h6>Please select the state from the menu and press the "Submit" button </h6>
+    <br>
+<div class="col-sm-12 col-md-2" id="state_selection">
+
+<form action="{{ url_for('routes.index') }}" method="post">
+    <d1>
+    {{states_form.csrf_token}}
+    {{ wtf.quick_form(states_form) }}
+    {{wtf.form_errors(states_form, hiddens=False)}}
+
+        <input class="btn btn-primary" type="submit" value="Submit">
+
+    </d1>
+
+</form>
+</div>
+
+{% endblock %}

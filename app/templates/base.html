@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+{% import "bootstrap/wtf.html" as wtf %}
+{% block head %}
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>
+  {% block title %}
+         {% if title %}
+        {{ title }}
+        {% else %}
+    Covid-19 update
+    {% endif %}
+        {% endblock %}
+  </title>
+
+    <link rel="stylesheet" href={{url_for('static',filename='css/bootstrap.min.css')}}>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <link rel="stylesheet" href={{url_for('static',filename='css/jquery.dataTables.min.css')}}>
+    <script src="static/js/jquery.dataTables.min.js"></script>
+
+
+</head>
+{% endblock %}
+
+<body>
+   <div class="container-fluid">
+        <br>
+    <h3>Covid-19 Update</h3>
+    <br>
+
+
+
+        {% block app_content %}
+
+        {% endblock %}
+    </div>
+
+</body>
+</html>
