@@ -6,9 +6,9 @@ This is the command which can be used to run the application on the development 
     python manage.py  runserver -h 127.0.0.1 -p 5000<br />
 The server will run on the local host using port 5000, the user can select different port.<br />
 # Usage<br />
-The user can select US state from a pull-dwon menu at the main page then press "Submit" button.<br />
-Then, a tabular view will pop up which contains data related to Covid-19 for the select state.<br />
-The table columns can be sorted and the user can select how many rows to display in each pages.<br />
+The user can select a US state from a pull-down menu at the main page then press "Submit" button.<br />
+Then, a tabular view will pop up which contains data related to Covid-19 for the selected state.<br />
+The table columns can be sorted and the user can select how many rows to display in each page.<br />
 The data is fetched at run time from https://covidtracking.com/data/api.<br />
 # Testing<br />
 The application has a basic test unit (test_app) which is extendable.<br />
