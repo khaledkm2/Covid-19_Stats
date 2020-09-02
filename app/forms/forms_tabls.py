@@ -28,7 +28,7 @@ class changeTable(Table):
     date = Col ('Date')
     positiveIncrease = Col("Daily number of confirmed cases")
     positive=Col("Total number of confirmed cases")
-    death_increase=Col("Daily number of death")
+    death_increase=Col("Daily number of deaths")
     death = Col("Total number of deaths")
 
 
