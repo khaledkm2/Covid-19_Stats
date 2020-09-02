@@ -1,7 +1,7 @@
 # Covid-19 data display
-This application has been written in Python 3.7 and Flask framework. 
-It is a fully working application but it has not been fully tested.
-The dependable packages are saved in requirments.txt
+\This application has been written in Python 3.7 and Flask framework. 
+\It is a fully working application but it has not been fully tested.
+\The dependable packages are saved in requirments.txt
 This is the command which can be used to run the application on the development server at the: 
     python manage.py  runserver -h 127.0.0.1 -p 5000
 The server will run on the local host using port 5000, the user can select different port.
