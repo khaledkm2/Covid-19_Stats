@@ -19,7 +19,8 @@ def get_val(item, val):
 def get_data(state):
     covidtrackingUrl=covid_app.config.get('COVID_TRACK_URL')
     file_name = covid_app.config.get('JSON_FILE_NAME')
-    api_url="%s/%s/%s"%(covidtrackingUrl,state,file_name)
+    #change the state to a lower case it does not accpt other format
+    api_url="%s/%s/%s"%(covidtrackingUrl,state.lower(),file_name)
     resp = requests.get(url=api_url,)
     data = json.loads(resp.text)
     if  isinstance(data, dict):
@@ -43,4 +44,3 @@ def get_data(state):
     states = get_states(return_dict=True)
     st = [ky for ky, val in states.items() if val == state]
     return st,returned_values
-
